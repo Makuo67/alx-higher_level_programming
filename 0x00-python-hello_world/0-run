@@ -1,0 +1,3 @@
+#!/bin/bash
+#!/usr/bin/python3
+gcc -E $PYFILE -o c
