@@ -4,9 +4,12 @@
 
 class Square:
     """Class square based on 0-square.py"""
+
     def __init__(self, size=0):
-        self.__size = size
-        if size is not type(int):
+        """Initializing square"""
+        if type(size) is not int:
             raise TypeError("size must be an integer")
-        if size < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
